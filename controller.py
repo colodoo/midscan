@@ -16,6 +16,7 @@ def get_ip():
 
 def scan():
     result1_list = []
+    thread_list = []
     f = open(constannt.SORT_IP_RESULT_FILE_NAME, 'r')
     for ip in f.readlines():
         result1_list.append(str(ip).replace('\n', '').strip())
@@ -23,10 +24,14 @@ def scan():
     chunk_list = lambda a_list, n: izip_longest(*[iter(a_list)] * n)
     result_groups = list(chunk_list(result1_list, len(result1_list)/30))
 
+
     for result in result_groups:
         t=threading.Thread(target=open_url, args=(result, 0))
         t.start()
-    t.join()
+        thread_list.append(t)
+
+    for t in thread_list:
+        t.join()
 
 def drop():
     drop_port()

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///E:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1609149289" profile_name="Quick scan" xmloutputversion="1.04" scanner="nmap" version="7.80" startstr="Mon Dec 28 17:54:49 2020" args="nmap -T4 -F baidu.com"><scaninfo services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157" protocol="tcp" numservices="100" type="syn"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.80 ( https://nmap.org ) at 2020-12-28 17:54 ?D1ú±ê×?ê±??
+Nmap scan report for baidu.com (39.156.69.79)
+Host is up (0.018s latency).
+Other addresses for baidu.com (not scanned): 220.181.38.148
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 5.70 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="39.156.69.79"></address><hostnames><hostname type="user" name="baidu.com"></hostname></hostnames><ports><extraports count="98" state="filtered"></extraports><port protocol="tcp" portid="80"><state reason="syn-ack" state="open" reason_ttl="64"></state><service method="table" conf="3" name="http"></service></port><port protocol="tcp" portid="443"><state reason="syn-ack" state="open" reason_ttl="46"></state><service method="table" conf="3" name="https"></service></port></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence></host><runstats><finished timestr="Mon Dec 28 17:54:54 2020" time="1609149294"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
