@@ -1,5 +1,7 @@
 # midscan
 
+![python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
+
 ## 安装方法
 
 ```
